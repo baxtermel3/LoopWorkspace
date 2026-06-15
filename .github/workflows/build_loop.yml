@@ -200,9 +200,9 @@ jobs:
           
           #curl https://github.com/loopnlearn/Loop/commit/d206432b024279ef710df462b20bd464cd9682d4.patch | git apply --directory=Loop -v --whitespace=fix
           
-          # Alertpermissionschecker no longer generates flag at top of home page, Module=Loop
-          curl https://github.com/baxtermel3/Loop/commit/32da5a5ffce3b6a286bf0034e0e988d032fed01a.patch | git apply -v --directory=Loop
-
+          # Change banner variable from dynamic to a fixed False in StatusTableViewController.
+          curl https://github.com/baxtermel3/Loop/commit/61e052d6157290dc2f529b09f4475742bf263da7.patch | git apply -v --directory=Loop 
+          
           # Omnipod PumpManagerUI no longer pulls up checkAttachment, Module=OmnipodKit
           curl https://github.com/baxtermel3/OmnipodKit/commit/08cb06f6805f45bbf46db48c856408410fd62cc7.patch | git apply -v --directory=OmnipodKit
           
