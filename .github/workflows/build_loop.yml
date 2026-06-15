@@ -197,7 +197,14 @@ jobs:
           # Submodule Loop patches:
           # Template for customizing submodule Loop (changes Loop app name to "CustomLoop")
           # Remove the "#" sign from the beginning of the line below to activate:
+          
           #curl https://github.com/loopnlearn/Loop/commit/d206432b024279ef710df462b20bd464cd9682d4.patch | git apply --directory=Loop -v --whitespace=fix
+          
+          # NotificationsManager no longer checks iOS notification center to see if it's enabled for Loop, Module=Loop
+          curl https://github.com/baxtermel3/Loop/commit/67dfe2ff35defd39a6b0042fd7f95bae44c6775f.patch | git apply -v --directory=Loop
+
+          # Omnipod PumpManagerUI no longer pulls up checkAttachment, Module=OmnipodKit
+          curl https://github.com/baxtermel3/OmnipodKit/commit/d9546d4f94867c91c4240b72a9ebd6916a4d9c3a.patch | git apply -v --directory=OmnipodKit
 
           # Submodule LoopKit patches:
           # General template for customizing submodule LoopKit 
