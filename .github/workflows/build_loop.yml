@@ -208,7 +208,9 @@ jobs:
           
           # Loop homepage shows values 3 hours in the past instead of 1, Module=Loop
           curl https://github.com/baxtermel3/Loop/commit/fd659f6040fb0708d1c10d5beee5cc1cb2192bad.patch | git apply -v --directory=Loop
-          
+
+          # Purple pod icon (normal state) - OmnipodKit submodule
+          curl -fsSL "https://gist.githubusercontent.com/baxtermel3/9536b4b866db839c968a666705b2d77c/raw/d19507d78c61e0adb42bb7f886e78dbf66d4d09b/gistfile1.txt" | git apply --directory=OmnipodKit -v
 
           # Submodule LoopKit patches:
           # General template for customizing submodule LoopKit 
