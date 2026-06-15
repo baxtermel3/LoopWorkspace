@@ -201,7 +201,7 @@ jobs:
           #curl https://github.com/loopnlearn/Loop/commit/d206432b024279ef710df462b20bd464cd9682d4.patch | git apply --directory=Loop -v --whitespace=fix
           
           # NotificationsManager no longer checks iOS notification center to see if it's enabled for Loop, Module=Loop
-          curl https://github.com/baxtermel3/Loop/commit/67dfe2ff35defd39a6b0042fd7f95bae44c6775f.patch | git apply -v --directory=Loop
+          curl https://github.com/baxtermel3/Loop/commit/f62133e510c2c9082f9c2f963587aaba80828eaf.patch | git apply -v --directory=Loop
 
           # Omnipod PumpManagerUI no longer pulls up checkAttachment, Module=OmnipodKit
           curl https://github.com/baxtermel3/OmnipodKit/commit/08cb06f6805f45bbf46db48c856408410fd62cc7.patch | git apply -v --directory=OmnipodKit
